@@ -597,6 +597,7 @@ img {
   pointer-events: none;
 }
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -652,7 +653,6 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
-  padding: 72px 24px 24px 24px;
 }
 .modal .button:hover,
 .modal .button:focus {
@@ -662,7 +662,6 @@ img {
 .form-label {
   display: inline-block;
   margin-bottom: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.01em;
@@ -693,12 +692,13 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover ~ .form-icon,
+/* .form-input:hover ~ .form-icon, */
 .form-input:focus ~ .form-icon,
-.form-input:hover,
+/* .form-input:hover, */
 .form-input:focus {
   fill: var(--filters-text-color);
   border-color: var(--filters-text-color);
@@ -722,8 +722,7 @@ img {
 .form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
-.form-textarea:focus,
-.form-textarea:hover {
+.form-textarea:focus {
   border-color: var(--filters-text-color);
 }
 .form-link:last-child {
